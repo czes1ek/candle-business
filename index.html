@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joana's Custom Candles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#home" class="logo">🕯️ Joana's Candles</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Handcrafted, quality candles. Made with love.</h1>
+            <p>Premium products for any moment!</p>
+            <a href="#products" class="btn"><span>See my products</span></a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2>My Story</h2>
+            <p>Joana's Custom Candles was started by me... Joana! The beauty of the art of candles motivates me with every candle.</p>
+            <p>Each of my candles is handcrafted using premium soy wax, natural fragrances, and sustainable materials to create a beautiful design!</p>
+            <p>My passion for candle making began in my humble abode, making candles for my family! I decided to turn my passion into a venture! I strive for each one of my candles to bring love, warmth, and comfort into every home!</p>
+            <p>From relaxing lavender to invigorating citrus, my candles offer something special for every occasion. I love to take custom orders - especially challenging ones - to provide an exquisite product!</p>
+        </div>
+        <div class="about-image">
+            🕯️
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <h2>My Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">🌸</div>
+                <div class="product-info">
+                    <h3>Candle 1</h3>
+                    <p>Description for this candle</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🍋</div>
+                <div class="product-info">
+                    <h3>Candle 2</h3>
+                    <p>Description for this candle</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🌲</div>
+                <div class="product-info">
+                    <h3>Candle 3</h3>
+                    <p>Description for this candle</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🌹</div>
+                <div class="product-info">
+                    <h3>Candle 4</h3>
+                    <p>Description for this candle</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">☕</div>
+                <div class="product-info">
+                    <h3>Candle 5</h3>
+                    <p>Description for this candle</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🌊</div>
+                <div class="product-info">
+                    <h3>Candle 6</h3>
+                    <p>Description for this candle</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>More About My Candles!</h2>
+        <div class="features-grid">
+            <div class="feature">
+                <div class="feature-icon">♻️</div>
+                <h3>Eco-Friendly</h3>
+                <p>100% natural soy wax and sustainable materials in every candle</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">✋</div>
+                <h3>Handcrafted</h3>
+                <p>Each candle is carefully hand-poured with attention to detail</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🌿</div>
+                <h3>Natural Scents</h3>
+                <p>Premium essential oils and natural fragrances, no harmful chemicals</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-content">
+            <h2>Get in Touch</h2>
+            <p>Have questions or want to place a custom order? I would love to hear from you!</p>
+            <div class="contact-info">
+                <p>📧 Email: <a href="mailto:joana@customcandles.com">joana@customcandles.com</a></p>
+                <p>📞 Phone: <a href="tel:123-456-7890">123-456-7890</a></p>
+                <p>📱 Instagram: <a href="https://instagram.com/joanascandles" target="_blank">@joanascandles</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Joana's Custom Candles. Handcrafted with love.</p>
+        <p>Follow me on social media for updates and special offers!</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
